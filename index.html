@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Drafts</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <div class="wrapper">
@@ -14,11 +14,11 @@
                 <div class="header__menu menu">
                     <nav class="menu__body">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="" class="menu__link menu__link_black">Home</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">About me</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Skills</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Portfolio</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Contacts</a></li>
+                            <li class="menu__item"><a href="#name" class="menu__link menu__link_black">Домой</a></li>
+                            <li class="menu__item"><a href="#about" class="menu__link">Обо мне</a></li>
+                            <li class="menu__item"><a href="#skills" class="menu__link">Навыки</a></li>
+                            <li class="menu__item"><a href="#portfolio" class="menu__link">Портфолио</a></li>
+                            <li class="menu__item"><a href="#footer" class="menu__link">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -33,7 +33,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="name">
+            <section class="name" id="name">
                 <div class="name__container _container">
                     <div class="name__content">
                         <h1 class="name__title">Василий<br>Плешанов</h1>
@@ -45,16 +45,115 @@
                         </div>
                     </div>
                     <div class="name__image">
-                        <img src="/img/name/my-foto.jpg" alt="">
+                        <img src="img/name/my-foto.jpg" alt="">
                     </div>
-                    
+                </div>
+            </section>
+            <section class="about" id="about">
+                <div class="about__container _container">
+                    <div class="about__text-block text-block">
+                        <h2 class="text-block__title">Обо мне</h2>
+                        <div class="text-block__text">
+                            <p>Привет, меня зовут Василий - я frontend разработчик из Москвы.<br>Я интересуюсь web-разработкой и всем, что с ней связанно.</p>
+                            <p>Я самостоятельно изучаю разработку по книгам и курсам,<br>закрепляя новые технологии созданием своих проектов.</p>
+                            <p>Готов реализовать крутые проекты вместе<br>с замечательными людьми.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills" id="skills">
+                <div class="skills__contsiner _container">
+                    <div class="skills__text-block text-block">
+                        <h2 class="text-block__title text-block__title_skills">Навыки</h2>
+                        <div class="text-block__text">
+                            <p>Я владею такими технологиями, как</p>
+                        </div>
+                    </div>
+                    <div class="skills__items">
+                        <div class="skills__item item-skills">
+                            <div class="item-skills__image">
+                                <img src="img/skills/html.png" alt="">
+                            </div>
+                            <p class="item-skills__text">HTML</p>
+                            <div class="item-skills__grade">
+                                <img src="img/skills/stars-four.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__item item-skills">
+                            <div class="item-skills__image">
+                                <img src="img/skills/css.png" alt="">
+                            </div>
+                            <p class="item-skills__text">CSS</p>
+                            <div class="item-skills__grade">
+                                <img src="img/skills/stars-four.png" alt="">
+                            </div>
+                        </div>
+                        <div class="skills__item item-skills">
+                            <div class="item-skills__image">
+                                <img src="img/skills/js.png" alt="">
+                            </div>
+                            <p class="item-skills__text">JavaScript</p>
+                            <div class="item-skills__grade">
+                                <img src="img/skills/stars-three.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio" id="portfolio">
+                <div class="portfolio__container _container">
+                    <div class="portfolio__text-block text-block">
+                        <h2 class="text-block__title">Портфолио</h2>
+                    </div>
+                    <div class="portfolio__items">
+                        <div class="portfolio__item item-portfolio">
+                            <div class="item-portfolio__images">
+                                <img src="img/portfolio/sate-1.jpg" alt="">
+                            </div>
+                            <a href="" class="item-portfolio__link">sate_1</a>
+                        </div>
+                        <div class="portfolio__item item-portfolio">
+                            <div class="item-portfolio__images">
+                                <img src="img/portfolio/sate-2.jpg" alt="">
+                            </div>
+                            <a href="" class="item-portfolio__link">sate_2</a>
+                        </div>
+                        <div class="portfolio__item item-portfolio">
+                            <div class="item-portfolio__images">
+                                <img src="img/portfolio/sate-3.jpg" alt="">
+                            </div>
+                            <a href="" class="item-portfolio__link">sate_3</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer class="footer">
-
+        <footer class="footer" id="footer">
+            <div class="footer__container _container">
+                <div class="footer__text-block text-block">
+                    <h2 class="text-block__title">Контакты</h2>
+                    <div class="text-block__text">
+                        <p>Хотите узнать больше или просто поболтать?<br>Пожалуйста!</p>
+                    </div>
+                </div>
+                <a href="https://t.me/vasilypleshanov" target="_blank" class="footer__button">Отправить сообщение</a>
+                <div class="footer__links">
+                    <a href="https://t.me/vasilypleshanov" target="_blank" class="footer__link">
+                        <img src="img/footer/tg.png" alt="Телеграм">
+                    </a>
+                    <a href="https://www.instagram.com/vasilypleshanov/" target="_blank" class="footer__link">
+                        <img src="img/footer/inst.png" alt="Инстаграм">
+                    </a>
+                    <a href="https://vk.com/vasilypleshanov" target="_blank" class="footer__link">
+                        <img src="img/footer/vk.png" alt="Вконтакте">
+                    </a>
+                    <a href="https://github.com/VasilyPleshanov" target="_blank" class="footer__link">
+                        <img src="img/footer/github.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
         </footer>
     </div>
-    <script src="/js/headerMenu.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
